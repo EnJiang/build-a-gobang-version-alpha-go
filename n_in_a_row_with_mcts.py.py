@@ -166,7 +166,6 @@ class AI(Player):
 
         self.simulation_count = 0
         start_time = time.time()
-        current_node = current_root
         while time.time() - start_time < think_time:
             one, _ = self.select(current_root)
             self.simulation_count += 1

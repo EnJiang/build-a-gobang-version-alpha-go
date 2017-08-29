@@ -156,7 +156,7 @@ class AI(Player):
             child_inside = self.record.find(child)
             tmp_board = Board()
             tmp_board.set_with_state(child_inside.state)
-            favourable = self.simulate(board)
+            favourable = self.simulate(tmp_board)
             if favourable:
                 child_inside.win_i += 1
             child_inside.n_i += 1
